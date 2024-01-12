@@ -73,8 +73,14 @@ nav li a {
     margin-bottom: 32px;
 }
 
+
+.banner img{
+
+    width: 100%;
+}
+
 /* btn shared */
-.btn {
+.btn-primary {
 
     width: 180px;
     height: 64px;
@@ -82,7 +88,34 @@ nav li a {
     background: #FF900E;
     border: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 60px;
+    cursor: pointer;
+}
+
+/* responsive layout */
+
+/* mobail */
+@media screen and  (max-width: 576px) {
+
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* mediam /tablet */
+
+@media screen and (min-width :576px) and (max-width :960px)  {
+
+    nav{
+        
+        flex-direction: column;
+    }
+    header{
+        padding: 50px;
+    }
 }
