@@ -153,13 +153,84 @@ main {
 
 /* features and some */
 
+/* feature */
+
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 140px;
+    margin-bottom: 160px;
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 100px;
+}
+
+.feature-content-title {
+
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
 
 
+}
+
+.features .feature-content-title {
+
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    height: 106px;
 
 
+}
 
 
+.cards-title {
 
+    color: #131313;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.ten-years-badge {
+
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 150px;
+
+
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin-top: 0;
+    padding: 45px 40px;
+}
+
+.ten-years-badge h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-top: -80px;
+
+}
 
 
 /* some */
@@ -235,7 +306,7 @@ main {
 }
 
 
-.company{
+.company {
 
     display: flex;
     justify-content: space-evenly;
@@ -244,11 +315,29 @@ main {
     gap: 20px;
     /* width: 125px; */
 
-    
+
 }
 
 
 
+/* footer */
+
+.footer {
+
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    padding: 38px;
+    margin: 200px 240px;
+}
+
+.footer-desk {
+
+    color: #424242;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
 
 
 
@@ -264,12 +353,25 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .company {
+    .company,
+    .features 
+    {
         flex-direction: column;
-      justify-content: center;
+        justify-content: center;
         align-items: center;
     }
 
+    .feature-img img {
+
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+
+        position: static;
+        max-width: 500px;
+    }
 
     .teams-img-container {
         grid-template-columns: 1fr;
@@ -286,6 +388,13 @@ main {
         gap: 20px;
     }
 
+
+    .footer{
+
+        margin: 0 ;
+    }
+
+
 }
 
 /* mediam /tablet */
@@ -293,16 +402,16 @@ main {
 @media screen and (min-width :576px) and (max-width :960px) {
 
     nav,
-    .teams-container ,
-    .company
-    {
+    .teams-container,
+    .company,
+    .features {
 
         flex-direction: column;
-       
+
     }
 
     header {
         padding: 50px;
     }
-  
+
 }
